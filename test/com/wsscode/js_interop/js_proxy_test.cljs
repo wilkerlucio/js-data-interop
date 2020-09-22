@@ -1,7 +1,7 @@
 (ns com.wsscode.js-interop.js-proxy-test
   (:require [clojure.test :refer [deftest is are run-tests testing]]
-            [goog.object :as gobj]
-            [com.wsscode.js-interop.js-proxy :as jsp]))
+            [com.wsscode.js-interop.js-proxy :as jsp]
+            [goog.object :as gobj]))
 
 (defn js= [a b]
   (= (js/JSON.stringify a)
