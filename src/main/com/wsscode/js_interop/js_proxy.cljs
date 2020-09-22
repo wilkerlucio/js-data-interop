@@ -2,7 +2,8 @@
   "JS proxy provides an alternative way to use Clojurescript immutable data structures
   with a JSON interface. This can be used as an alternative to clj->js, check the
   documentation for details about the tradeoffs."
-  (:require [goog.object :as gobj]))
+  (:require
+    [goog.object :as gobj]))
 
 (defonce kw-cache #js {})
 
@@ -73,17 +74,17 @@
   [m]
   (let [internal-cache #js {}]
     (js/Proxy. m
-      #js {:get
-           map-proxy-get
+               #js {:get
+                    map-proxy-get
 
-           :ownKeys
-           #(map-proxy-own-keys % %2 internal-cache)
+                    :ownKeys
+                    #(map-proxy-own-keys % %2 internal-cache)
 
-           :has
-           map-proxy-has
+                    :has
+                    map-proxy-has
 
-           :getOwnPropertyDescriptor
-           map-proxy-property-descriptor})))
+                    :getOwnPropertyDescriptor
+                    map-proxy-property-descriptor})))
 
 (defn jsp
   "Shorter name for js-proxy."

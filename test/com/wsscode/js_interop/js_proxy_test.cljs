@@ -1,7 +1,8 @@
 (ns com.wsscode.js-interop.js-proxy-test
-  (:require [clojure.test :refer [deftest is are run-tests testing]]
-            [com.wsscode.js-interop.js-proxy :as jsp]
-            [goog.object :as gobj]))
+  (:require
+    [clojure.test :refer [deftest is are run-tests testing]]
+    [com.wsscode.js-interop.js-proxy :as jsp]
+    [goog.object :as gobj]))
 
 (defn js= [a b]
   (= (js/JSON.stringify a)
@@ -44,13 +45,13 @@
     (is (js= (js/Object.keys
                (jsp/map-proxy {:foo      "bar"
                                :order/id "baz"}))
-          #js ["foo" "order/id"])))
+             #js ["foo" "order/id"])))
 
   (testing "ownKeys"
     (is (js= (js/Object.getOwnPropertyNames
                (jsp/map-proxy {:foo      "bar"
                                :order/id "baz"}))
-          #js ["foo" "order/id"])))
+             #js ["foo" "order/id"])))
 
   (testing "has"
     (is (= (gobj/containsKey (jsp/map-proxy {:foo "bar"}) "foo")
