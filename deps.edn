@@ -2,7 +2,7 @@
  ["src/main"]
 
  :deps
- {com.fulcrologic/guardrails {:mvn/version "0.0.12"}}
+ {}
 
  :aliases
  {:provided
