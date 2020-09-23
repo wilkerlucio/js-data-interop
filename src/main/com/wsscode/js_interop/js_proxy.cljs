@@ -8,7 +8,11 @@
 (defonce kw-cache #js {})
 
 (defn cached-keyword
-  "Like keyword, but will cache the string for faster lookup after first usage."
+  "Like keyword, but will cache the string for faster lookup after first usage.
+
+  Using the cache read gets about 4x faster than converting. Considering that the
+  keywords in an application tend to be consistent, this I think this cache will get hit
+  enough to worth the memory cost."
   [s]
   (or (aget kw-cache s)
       (let [kw (keyword s)]
