@@ -1,2 +1,3 @@
 = JS Data Interop
 
+Check the link:https://wilkerlucio.github.io/alternative-to-clj-js/[announcement blog post].
