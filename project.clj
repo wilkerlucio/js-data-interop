@@ -1,4 +1,4 @@
-(defproject com.wsscode/js-interop "0.0.1-SNAPSHOT"
+(defproject com.wsscode/js-interop "0.0.1"
   :description "Library to provide alternative tools to interop between Clojurescript immutable data structures and JSON."
   :url "https://github.com/wilkerlucio/js-data-interop"
   :license {:name "MIT"
