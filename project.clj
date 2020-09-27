@@ -4,7 +4,7 @@
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
 
-  :source-paths ["src"]
+  :source-paths ["src/main"]
 
   :dependencies [[org.clojure/clojure "1.10.0" :scope "provided"]
                  [org.clojure/clojurescript "1.10.764" :scope "provided"]]
