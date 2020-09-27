@@ -1,5 +1,5 @@
 {
-  "name": "pathom3",
+  "name": "js-data-interop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilkerlucio/pathom3.git"
+    "url": "git+https://github.com/wilkerlucio/js-data-interop.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wilkerlucio/pathom3/issues"
+    "url": "https://github.com/wilkerlucio/js-data-interop/issues"
   },
-  "homepage": "https://github.com/wilkerlucio/pathom3#readme",
+  "homepage": "https://github.com/wilkerlucio/js-data-interop#readme",
   "dependencies": {
     "karma": "^5.1.1",
     "karma-chrome-launcher": "^3.1.0",
